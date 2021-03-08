@@ -98,12 +98,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gz="git cz"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
-export PATH=$PATH:/Users/liamwork/development/flutter/bin
-
-
-
-dkr() {
-  docker ps --all --quiet --filter status=running | xargs docker kill
-  docker ps --all --quiet --filter status=exited | xargs docker rm
-}
